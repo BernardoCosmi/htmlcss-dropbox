@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    font-size: ;
+    /* border: 1px solid black; */
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.1rem;
 }
 
 /* Header */
 .header-flex{
-    height: 80vh;
+    height: 65%;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
+    background-color: #b4d0e7;
 }
 
 /* Nav menù generale*/
@@ -26,7 +33,6 @@
     right: 0;
     padding: 10px;
     background-color: white;
-    border: 1px solid red;  /* Togliere */
 }
 .flex-menù{
     position: absolute;
@@ -57,12 +63,61 @@ li>a{
     height: 1.5em;
     align-self: center;
 }
-.flex-menù.right > button{
+.blue{
     padding: 5px;
     background-color: #0061FE;
-    align-self: center;
+    border: none;
 }
-.flex-menù.right > button > a{
+.button_b{
     color: white;
     text-decoration: none;
+}
+
+/* Container title and img */
+.header-container-flex{
+    height: 400px;
+    margin-top: 70px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.header-container-flex > h1{
+    font-size: 4rem;
+    padding: 20px 0px;
+    font-weight: 900;
+}
+.header-container-flex > article{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+article > div{
+    display: flex;
+    flex-direction: column;
+    min-width: 20vw;
+}
+div>button.blue.long{
+    width: 67%;
+}
+article > img{
+    width: 105%;
+    height: 105%;
+}
+article>div>p{
+    margin-bottom: 20px;
+}
+article> div> a{
+    margin-top: 50px;
+}
+article> div> span{
+    margin-top: 20px;
+}
+#goto{
+    width: 3rem;
+    height: 3rem;
 }

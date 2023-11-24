@@ -2,4 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* Header */
+.header-flex{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+/* Nav menù generale*/
+.nav-flex{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid red;  /* Togliere */
+}
+.flex-menù{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+}
+.flex-menù > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+li>a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+/* Nav menù left and right */
+.flex-menù.left{
+    left: 10px;
+}
+.flex-menù.right{
+    right: 10px;
+}
+.flex-menù.left > img{
+    position: relative;
+    height: 1.5em;
+    align-self: center;
+}
+.flex-menù.right > button{
+    padding: 5px;
+    background-color: #0061FE;
+    align-self: center;
+}
+.flex-menù.right > button > a{
+    color: white;
+    text-decoration: none;
 }

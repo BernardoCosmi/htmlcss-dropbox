@@ -326,3 +326,24 @@ span>input{
 .button_w:hover .button_link_w{
     color: white;
 }
+/* SECTION 3 */
+.section-container.tre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.section-container.tre>h1{
+    width: 100%;
+}
+.functionality{
+    display: flex;
+    flex-direction: column;
+    max-width: calc((90%)/3);
+    gap: 20px;
+}
+.functionality>img{
+    width: 100%;
+}
+

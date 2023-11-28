@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
-    border: 1px solid black;
 }
 
 /* SECTION 0 (HEADER) */
@@ -123,6 +122,9 @@ article> div> span{
     width: 3rem;
     height: 3rem;
     color: black;
+}
+.down-arrow{
+    fill: black;
 }
 
 /* GENERAL CONTAINER*/
@@ -390,6 +392,10 @@ span>input{
 .section-five.center>figure>img{
     max-width: 60%;
 }
+.section-five.center>hr{
+    width: 40%;
+    border: 1px solid lightgrey;
+}
 .section-five.left > figure{
     width: 50%;
     height: 50%;
@@ -397,12 +403,14 @@ span>input{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    z-index: -2;
 }
 .section-five.left>figure>img{
     max-width: 80%;
     max-height: 80%;
     margin: auto;
     filter: invert(100);
+    z-index: -1;
 }
 .section-five.right > figure{
     width: 50%;
@@ -411,12 +419,14 @@ span>input{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    z-index: -2;
 }
 .section-five.right>figure>img{
     max-width: 80%;
     max-height: 80%;
     margin: auto;
     filter: invert(100);
+    z-index: -1;
 }
 .section-five.left>figure:nth-child(1){
     background-color: #a2d39b;
@@ -476,3 +486,60 @@ span>input{
     color: white;
 }
 /* SECTION 6 */
+.section-container.sei{
+    padding: 10px 0px;
+}
+.section-container.sei>hr{
+    border: 1px solid lightgray;
+}
+.FAQ{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.FAQ>span{
+    padding: 2%;
+    margin: 10px;
+    font-weight: 900;
+}
+
+/* SECTION 7 (FOOTER) */
+footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    background-color: #000000;
+    padding: 5% 5%;
+}
+.footer-contact{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 0 5%;
+}
+.footer-flex-list>h2{
+    margin-bottom: 10px;
+}
+.footer-flex-list>ul{
+    list-style-type: none;
+}
+.footer-flex-list>ul>li{
+    font-size: smaller;
+    padding-top: 3px;
+    text-decoration: none;
+}
+footer>hr{
+    max-width: 20vw;
+    margin-left: 10%;
+    border: 1px solid lightgray;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+footer>span{
+    margin-left: 10%;
+}
+footer>span>svg{
+    fill: white;
+}
